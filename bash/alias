@@ -1,0 +1,16 @@
+unset ls
+alias l='ls -altrF'
+unset less
+alias less='less -N'
+#export PS1=[\\u@\\W]\$\
+alias j=jobs
+unset grep
+alias grep='grep -In --color=auto'
+alias rgrep='grep -r'
+alias vi='vim'
+alias diff='colordiff'
+alias whoami='echo Batman'
+alias ssh='\ssh -C'
+gitd() {
+    echo 'git stash show|git stash pop|git stash -u'
+}

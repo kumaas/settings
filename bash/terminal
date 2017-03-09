@@ -1,0 +1,7 @@
+HISTCONTROL=ignoreboth
+HISTSIZE=2000
+HISTFILESIZE=4000
+shopt -s histappend
+shopt -s checkwinsize
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
