@@ -28,6 +28,6 @@ export CURR_PWD=$PWD
 echo $SETTINGS_DIR > $SETTINGS_DIR/address  
 
 cd $SETTINGS_DIR # where settings are located  
-for file in `ls bash/*rc`; do source $file; done;  
+for file in \`ls bash/*rc\`; do source $file; done;  
 PS1=\`cat bash/prompt\`  
 cd $CURR_PWD  
