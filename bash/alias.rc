@@ -8,6 +8,7 @@ unset grep
 alias grep='grep -In --color=auto'
 alias rgrep='grep -r'
 alias vi='vim'
+alias h='history'
 alias diff='colordiff'
 alias whoami='echo Batman'
 alias ssh='\ssh -C'
