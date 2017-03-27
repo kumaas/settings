@@ -1,8 +1,11 @@
+### How to setup
+
 For macOS
 ---------
 
 Paste this into your |home|/.bash_profile file:
 --
+```bash
 export SETTINGS_DIR='|Full_path_to_where_you_cloned_this_repo|'  
 alias soal='source ~/.bash_profile'  
 
@@ -13,7 +16,7 @@ cd $SETTINGS_DIR # where settings are located
 for file in `ls bash/*rc`; do source $file; done;  
 PS1=\`cat bash/prompt\`  
 cd $CURR_PWD  
-
+```
 
 
 For Linux
