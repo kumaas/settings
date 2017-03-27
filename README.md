@@ -34,5 +34,5 @@ How to setup
 
 Customization
 ------------
-  - Add your own *.rc* files inside bash directory which will include your own new aliases. They all will be sourced through `soal` command, that is newly installed as an alias.
+  - Add your own `.rc` files inside bash directory which will include your own new aliases. They all will be sourced through `soal` command, that is newly installed as an alias.
   
