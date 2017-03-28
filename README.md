@@ -14,9 +14,9 @@ Bash
             for file in `\find default/rc custom/rc -name .*rc`; do source $file; done;
             PS1=`cat default/util/prompt`
             cd $CURR_PWD
-            ```
-
-      **For Linux**  
+            ```  
+            
+      - **For Linux**  
         - Paste this into your |home|/.bashrc:  
           ```bash
           export SETTINGS_DIR='|Full_path_to_where_you_cloned_this_repo|'
