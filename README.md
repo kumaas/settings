@@ -10,7 +10,7 @@ How to setup
   export CURR_PWD=$PWD
   echo $SETTINGS_DIR > "$SETTINGS_DIR/address"
 
-  cd "$SETTINGS_DIRi/bash" # where settings are located
+  cd "$SETTINGS_DIR/bash" # where settings are located
   for file in `\find default/rc custom/rc -name .*rc`; do source $file; done;
   PS1=`cat default/util/prompt`
   cd $CURR_PWD
@@ -26,7 +26,7 @@ How to setup
   export CURR_PWD=$PWD
   echo $SETTINGS_DIR > "$SETTINGS_DIR/address"
 
-  cd "$SETTINGS_DIRi/bash" # where settings are located
+  cd "$SETTINGS_DIR/bash" # where settings are located
   for file in `\find default/rc custom/rc -name .*rc`; do source $file; done;
   PS1=`cat default/util/prompt`
   cd $CURR_PWD
