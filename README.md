@@ -1,6 +1,6 @@
 Bash
 ----
-  1. **Setup**  
+  1. **`Setup`**  
     - `*MacOS*`
       - Paste this into your |home|/.bash_profile file:  
         ```bash
