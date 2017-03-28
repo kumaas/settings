@@ -2,7 +2,7 @@ How to setup
 ------------
 
 ### Bash
-  ** For MacOS **
+  ** For MacOS **  
     - Paste this into your |home|/.bash_profile file:
     ```bash
     export SETTINGS_DIR='|Full_path_to_where_you_cloned_this_repo|'
@@ -17,7 +17,7 @@ How to setup
     cd $CURR_PWD
     ```
 
-  ** For Linux **
+  ** For Linux **  
     - Paste this into your |home|/.bashrc:
     ```bash
     export SETTINGS_DIR='|Full_path_to_where_you_cloned_this_repo|'
@@ -32,7 +32,7 @@ How to setup
     cd $CURR_PWD
     ```
 
-  ** Customization **
+  ** Customization **  
   ------------
     - Add your own `.rc` files inside bash directory which will include your own new aliases. They all will be sourced through `soal` command, that is newly installed as an alias.
   
