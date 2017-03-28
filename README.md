@@ -2,7 +2,7 @@ How to setup
 ------------
 
 ### Bash
-  ** For MacOS **  
+  1. **For MacOS**  
    - Paste this into your |home|/.bash_profile file:  
      ```bash
      export SETTINGS_DIR='|Full_path_to_where_you_cloned_this_repo|'
