@@ -1,6 +1,11 @@
 Bash
 ----
   1. **`Setup`**  
+      - **Install the following for all the functionalities to work**  
+        - tree  
+        - colordiff  
+        - xclip  
+
       - **MacOS**  
         - Paste this into your |home|/.bash_profile file:  
           ```bash

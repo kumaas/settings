@@ -1,0 +1,10 @@
+wgit() {
+    echo '[stash] git stash show -p stash@{0} | git stash -u | git stash pop'
+}
+
+alias xgs='git status'
+alias xgpr='git pull --rebase'
+alias xgm='git commit -m '
+alias xgr='git rebase'
+alias xgd='git diff '
+alias xgb='git branch '

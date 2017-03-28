@@ -12,6 +12,15 @@ alias h='history'
 alias diff='colordiff'
 alias whoami='echo Batman'
 alias ssh='\ssh -C'
-gitd() {
-    echo 'git stash show|git stash pop|git stash -u'
+
+fang() {
+    if [ "$#" -ne 2 ] || ! [ -d "$1" ]; then
+        echo "Usage: DIRECTORY REGEX" >&2
+    else
+        \find $(readlink -f $1) | \grep --color=auto $2;
+    fi
+}
+
+fgc() {
+    fang $@ | xclip -selection clipboard;
 }
