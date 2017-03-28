@@ -1,11 +1,28 @@
+" general
+syntax enable
+set hlsearch
 set nocompatible
 set backspace=2
 set number
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-"com! FormatJSON %!python -m json.tool
-nmap =j :%!python -m json.tool<CR>
-
+set autoindent
+set background=dark
+set cmdheight=2
 set path+=**
 set wildmenu
-syntax enable
+
+" case
+set ignorecase
+set smartcase
+
+" tabs
+set expandtab
+set smarttab
+set tabstop=4 softtabstop=0 shiftwidth=4
+
+" key mappings
+nmap =j :%!python -m json.tool<CR>
+nmap <F2> :if expand('%:e')=='hh'<CR>e %:r.cc<CR>else<CR>e %:r.hh<CR>endif<CR><CR>
+
+" filetype
 filetype plugin on
+filetype indent on
