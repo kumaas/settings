@@ -3,7 +3,7 @@ How to setup
 
 ### Bash
   ** For MacOS **  
-    - Paste this into your |home|/.bash_profile file:
+    - Paste this into your |home|/.bash_profile file:  
     ```bash
     export SETTINGS_DIR='|Full_path_to_where_you_cloned_this_repo|'
     alias soal='source ~/.bash_profile'
@@ -18,7 +18,7 @@ How to setup
     ```
 
   ** For Linux **  
-    - Paste this into your |home|/.bashrc:
+    - Paste this into your |home|/.bashrc:  
     ```bash
     export SETTINGS_DIR='|Full_path_to_where_you_cloned_this_repo|'
     alias soal='source ~/.bashrc'
