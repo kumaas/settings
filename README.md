@@ -1,4 +1,5 @@
-### Bash
+Bash
+----
   1. **For MacOS**  
     - Paste this into your |home|/.bash_profile file:  
       ```bash
