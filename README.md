@@ -37,9 +37,9 @@ Bash
 Vim
 ---
   1. **`Setup`**  
-    - Run the following commands from your |home| directory  
-      ```bash
-      export SETTINGS_DIR=|Path to home directory|
-      ln -s $SETTINGS_DIR/vim/.vimrc
-      ln -s $SETTINGS_DIR/vim/.vim
-      ```
+      - Run the following commands from your |home| directory  
+        ```bash
+        export SETTINGS_DIR=|Path to home directory|
+        ln -s $SETTINGS_DIR/vim/.vimrc
+        ln -s $SETTINGS_DIR/vim/.vim
+        ```
