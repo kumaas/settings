@@ -1,5 +1,9 @@
 wgit() {
-    echo '[stash] git stash show -p stash@{0} | git stash -u | git stash pop'
+    BL='\033[1;34m'
+    YL='\033[1;33m'
+    GY='\033[0;37m'
+    SEP="${YL}|${GY}"
+    echo -e "\n${BL}stash${GY} git stash -u $SEP git stash pop $SEP git stash show -p stash@{0}\n"
 }
 
 alias xgs='git status'

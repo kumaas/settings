@@ -5,7 +5,9 @@ alias less='less -N'
 #export PS1=[\\u@\\W]\$\
 alias j=jobs
 unset grep
-alias grep='grep -In --color=auto'
+alias grep='\grep -I --color=auto'
+alias dgrep='\grep --color=auto'
+alias ngrep='grep -n'
 alias rgrep='grep -r'
 alias vi='vim'
 alias h='history'
@@ -22,5 +24,6 @@ fang() {
 }
 
 fgc() {
-    fang $@ | xclip -selection clipboard;
+    echo -n `fang $@` | xclip -selection clipboard;
+    echo `xclip -o -selection clipboard`;
 }
