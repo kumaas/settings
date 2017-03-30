@@ -22,6 +22,7 @@ set tabstop=4 softtabstop=0 shiftwidth=4
 " key mappings
 nmap =j :%!python -m json.tool<CR>
 nmap <F2> :if expand('%:e')=='hh'<CR>e %:r.cc<CR>else<CR>e %:r.hh<CR>endif<CR><CR>
+nmap =p :echo expand('%:p')<CR>
 
 " filetype
 filetype plugin on
