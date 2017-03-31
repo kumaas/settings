@@ -17,7 +17,15 @@ alias ssh='\ssh -C'
 
 fang() {
     if [ "$#" -ne 2 ] || ! [ -d "$1" ]; then
-        echo "Usage: DIRECTORY REGEX" >&2
+        echo "Usage: DIRECTORY SHELL_PATTERN" >&2
+    else
+        \find $(readlink -f $1) -name $2;
+    fi
+}
+
+fang2() {
+    if [ "$#" -ne 2 ] || ! [ -d "$1" ]; then
+        echo "Usage: DIRECTORY REGEX_PATTERN" >&2
     else
         \find $(readlink -f $1) | \grep --color=auto $2;
     fi
