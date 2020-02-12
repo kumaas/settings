@@ -1,6 +1,7 @@
 HISTCONTROL=ignoreboth
-HISTSIZE=2000
+HISTSIZE=20000
 HISTFILESIZE=4000
+export PROMPT_COMMAND='history -a;history -c;history -r'
 shopt -s histappend
 shopt -s checkwinsize
 bind "set completion-ignore-case on"

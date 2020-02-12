@@ -7,10 +7,27 @@ wgit() {
 }
 
 alias xgs='git status'
+alias xgsm='git ls-files -m'
 alias xgpr='git pull --rebase'
 alias xgm='git commit -m '
 alias xgr='git rebase'
 alias xgd='git diff '
+alias xgdl='git diff $(git log --pretty=oneline -1 | cut -d " " -f1)^1 $(git log --pretty=oneline -1 | cut -d " " -f1) '
+alias xgrl='git checkout $(git log --pretty=oneline -1 | cut -d " " -f1)^1 --'
 alias xgb='git branch '
 alias xgpl='git pull'
 alias xgph='git push'
+alias xgfm='git add -u; git commit -m "auto temp first commit"'
+alias xgam='git add -u; git commit --amend --no-edit'
+alias xgbd='git branch -D'
+alias xgs='git show $(git log --pretty=oneline -1 | cut -d " " -f1)'
+alias xgsn='git show $(git log --pretty=oneline -1 | cut -d " " -f1) --name-only'
+
+xgmm() {
+    git add -u;
+    git commit -m "$@"
+}
+
+xgsu() {
+    git branch --set-upstream-to=$@
+}

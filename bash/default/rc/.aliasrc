@@ -8,26 +8,37 @@ unset grep
 alias grep='\grep -I --color=auto'
 alias dgrep='\grep --color=auto'
 alias ngrep='grep -n'
-alias rgrep='grep -r'
+alias rgrep='ngrep -r'
+alias rgreppy='rgrep --include=*.py'
+alias rgrepch='rgrep --include=*.{cc,hh}'
+alias rgrephh='rgrep --include=*.hh'
+alias rgrepcc='rgrep --include=*.cc'
+alias rgrepbd='rgrep --include=BUILD'
+alias rgrepyl='rgrep --include=*.yml'
+alias rgrephl='rgrep --include=*.hidl'
+alias rgreppo='rgrep --include=*.proto'
+alias rgrepmd='rgrep --include=*.md'
 alias vi='vim'
 alias h='history'
+alias hl='h | \less'
+alias hg='h | grep'
 alias diff='colordiff'
 alias whoami='echo Batman'
 alias ssh='\ssh -C'
 
 fang() {
     if [ "$#" -ne 2 ] || ! [ -d "$1" ]; then
-        echo "Usage: DIRECTORY SHELL_PATTERN" >&2
+        echo "Usage: DIRECTORY REGEX_PATTERN" >&2
     else
-        \find $(readlink -f $1) -name $2;
+        \find $(readlink -f $1) | grep $2;
     fi
 }
 
 fang2() {
     if [ "$#" -ne 2 ] || ! [ -d "$1" ]; then
-        echo "Usage: DIRECTORY REGEX_PATTERN" >&2
+        echo "Usage: DIRECTORY SHELL_PATTERN" >&2
     else
-        \find $(readlink -f $1) | \grep --color=auto $2;
+        \find $(readlink -f $1) -name $2;
     fi
 }
 
